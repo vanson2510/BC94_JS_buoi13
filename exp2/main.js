@@ -1,6 +1,6 @@
 function TinhTien() {
     const hoTen = document.getElementById("hoTen").value;
-    const soKw = document.getElementById("soKw").value;
+    const soKw = document.getElementById("soKw").value * 1;
     const pInfo = document.getElementById("pInfo");
 
     if (hoTen === "" || soKw < 0) {
@@ -20,5 +20,5 @@ let tongTien = 0;
     } else {
         tongTien = (50 * 500) + (50 * 650) + (100 * 850) + (150 * 1100) + (soKw - 350) * 1300;
     }
-    pInfo.innerHTML = `Họ Tên: ${hoTen} Tiền điện: ${tongTien}`;
+    pInfo.innerHTML = `Họ Tên: ${hoTen} Tiền điện: ${tongTien.toLocaleString()}`;
 };
