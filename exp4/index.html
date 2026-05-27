@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Tiền Cáp</title>
+</head>
+
+<body>
+
+    <label for="">Chọn loại khách hàng</label>
+    <select id="selLoaiKH" onchange="xuLyLoaiKH()">
+        <option value="nhadan">Nhà Dân</option>
+        <option value="doanhnghiep">Doanh Nghiệp</option>
+    </select>
+
+    <label for="">Mã Khách Hàng</label>
+    <input id="txtMaKH" type="text" placeholder="Nhập mã Khách Hàng" />
+
+    <label for="">Số kênh cao cấp</label>
+    <input id="txtsoKenh" type="number" placeholder="Số kênh cao cấp" />
+
+    <div id="groupKetNoi" style="display: none;">
+        <label for="">Số kết nối</label>
+        <input id="txtSoKetNoi" type="number" placeholder="Nhập số kết nối" />
+    </div>
+    <button onclick="tinhTienCap()">Tính tiền cáp</button>
+    <div id="divKq"></div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
